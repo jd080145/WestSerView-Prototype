@@ -1,6 +1,6 @@
 <x-skeleton>
     <div class="flex flex-col justify-center items-center font-[sans-serif] bg-gradient-to-r from-blue-800 to-blue-500 text-[#333] lg:h-screen p-6">
-        <div class="grid md:grid-cols-2 items-center gap-y-8 bg-white max-w-7xl w-full shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md">1
+        <div class="grid md:grid-cols-2 items-center gap-y-8 bg-white max-w-7xl w-full shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md">
           <div class="max-md:order-1 flex flex-col justify-center sm:p-6 p-4 bg-gradient-to-r from-blue-600 to-blue-700 w-full h-full space-y-16">
             <div class="max-w-md space-y-12 mx-auto">
               <div>
@@ -24,14 +24,14 @@
             </div>
             <div class="grid lg:grid-cols-2 gap-y-7 gap-x-7">
               <div>
-                <label class="text-sm mb-2 block">First Name</label>
+                <label class="text-sm mb-2 block">Full Name</label>
                 <input name="name" type="text" class="bg-gray-100 w-full text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Enter full name" />
                 @error('name')
                             <p class="text-[#D70040]">{{$message}}</p>
                         @enderror
               </div>
               <div>
-                <label class="text-sm mb-2 block">Last Name</label>
+                <label class="text-sm mb-2 block">Username</label>
                 <input name="username" type="text" class="bg-gray-100 w-full text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Enter username" />
                 @error('username')
                             <p class="text-[#D70040]">{{$message}}</p>

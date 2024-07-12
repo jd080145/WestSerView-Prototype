@@ -36,9 +36,16 @@ return [
     */
 
     'guards' => [
-        'web' => [
+
+
+        'guests' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'guest_users',
+        ],
+
+        'staff' => [
+            'driver' => 'session',
+            'provider' => 'staff_users',
         ],
     ],
 
@@ -60,9 +67,15 @@ return [
     */
 
     'providers' => [
-        'users' => [
+
+
+        'guest_users' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', App\Models\User::class),
+            'model' => App\Models\User::class,
+        ],
+        'staff_users' => [
+            'driver' => 'eloquent',
+            'model' =>  App\Models\Staff::class,
         ],
 
         // 'users' => [
@@ -93,10 +106,24 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
-            'table' => env('AUTH_PASSWORD_RESET_TOKEN_TABLE', 'password_reset_tokens'),
+            'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
         ],
+        'guest_users' => [
+            'provider' => 'guest_users',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+
+        'staff_users' => [
+            'provider' => 'staff_users',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+
     ],
 
     /*
