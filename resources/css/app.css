@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .hover:hover{
+        @apply bg-slate-950 cursor-pointer text-white
+    }
+}
+

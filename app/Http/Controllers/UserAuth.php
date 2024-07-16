@@ -60,4 +60,6 @@ class UserAuth extends Controller
 
 
     }
+    public function logout(){
+    }
 }
