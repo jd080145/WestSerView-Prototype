@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-[#FFFFFF]">
+<body class="bg-[#FFFFFF] h-max">
     <header>
         <!--Navbar-->
     <nav class="bg-[#5c7c89] sticky top-0 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
@@ -132,7 +132,7 @@
                 <div class='pt-3 '>
                     <li class='pt-3 '>
 
-                    <a href="#" class="flex items-center justify-center p-2 text-base font-normal text-gray-900 rounded-lg bg-gray-100 hover:bg-gray-200 text-sm text-dark font-bold rounded-xl transition duration-200 text-center">
+                    <a href="#" class="flex items-center justify-center p-2 text-base font-normal text-gray-900 rounded-lg bg-blue-100 hover:bg-blue-300 text-sm text-dark font-bold rounded-xl transition duration-200 text-center">
                     Sign in
                 </a>
                     </li>
@@ -150,12 +150,26 @@
 
     <main class="p-0 m-0 pt-1m-0">
         <!--Padding div for navbar-->
+        <div style="height: 5px;"></div>
 
+        <div class="md:px-20 md:py-5 px-5 py-2 m-0 space-y-5">
+            
+            <div class="w-full relative text-center hover:text-white text-black shadow-lg border rounded-md border-2 border-white hover:border-blue-400 hover:border-2 border-solid overflow-hidden" style="height: 20vw;">
+                <img class="h-full w-full transform object-cover object-center blur blur-sm hover:blur-none" src="{{ URL('images/rooms/example-1.jpeg') }}">
+                <p class="absolute inset-0 lg:text-7xl md:text-4xl text-3xl lg:ps-5 lg:pt-15 md:ps-2 md:pt-10 ps-2 pt-5 drop-shadow-xl">Hotel Rooms</p>
+            </div>
 
-        <div class="h-100 w-full bg-cover bg-bottom"
-            style="background-image: url({{ URL('assets/backgrounds/example.jpeg') }}); height: 100vh;">
+            <div class="w-full relative text-center hover:text-white text-black shadow-lg border rounded-md border-2 border-white hover:border-blue-400 hover:border-2 border-solid overflow-hidden" style="height: 20vw;">
+                <img class="h-full w-full transform object-cover object-center blur blur-sm hover:blur-none" src="{{ URL('images/rooms/example-1.jpeg') }}">
+                <p class="absolute inset-0 lg:text-7xl md:text-4xl text-3xl lg:ps-5 lg:pt-15 md:ps-2 md:pt-10 ps-2 pt-5 drop-shadow-xl">Hotel Rooms</p>
+            </div>
+
+            <div class="w-full relative text-center hover:text-white text-black shadow-lg border rounded-md border-2 border-white hover:border-blue-400 hover:border-2 border-solid overflow-hidden" style="height: 20vw;">
+                <img class="h-full w-full transform object-cover object-center blur blur-sm hover:blur-none" src="{{ URL('images/rooms/example-1.jpeg') }}">
+                <p class="absolute inset-0 lg:text-7xl md:text-4xl text-3xl lg:ps-5 lg:pt-15 md:ps-2 md:pt-10 ps-2 pt-5 drop-shadow-xl">Hotel Rooms</p>
+            </div>
+
         </div>
-
         <div class="container mx-auto p-3">
 
 .
