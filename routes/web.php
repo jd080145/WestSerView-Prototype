@@ -15,3 +15,5 @@ Route:: post('/register', [UserAuth::class,'register']);
 Route::post('/logout', [UserAuth::class, 'logout'] )->name('logout');
 
 Route:: view('/dashboard', [AdminDashboard::class, 'index'])->middleware('admin' )->name('dashboard');
+
+Route:: view('/rooms', 'pages.RoomList')->name('rooms');

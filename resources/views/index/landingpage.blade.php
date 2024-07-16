@@ -154,20 +154,20 @@
 
         <div class="md:px-20 md:py-5 px-5 py-2 m-0 space-y-5">
             
-            <div class="w-full relative text-center hover:text-white text-black shadow-lg border rounded-md border-2 border-white hover:border-blue-400 hover:border-2 border-solid overflow-hidden" style="height: 20vw;">
+            <a class="p" href="{{route('rooms')}}"><div class="w-full relative text-center hover:text-white text-black shadow-lg border rounded-md border-2 border-white hover:border-blue-400 hover:border-2 border-solid overflow-hidden" style="height: 20vw;">
                 <img class="h-full w-full transform object-cover object-center blur blur-sm hover:blur-none" src="{{ URL('images/rooms/example-1.jpeg') }}">
                 <p class="absolute inset-0 lg:text-7xl md:text-4xl text-3xl lg:ps-5 lg:pt-15 md:ps-2 md:pt-10 ps-2 pt-5 drop-shadow-xl">Hotel Rooms</p>
-            </div>
+            </div></a>
 
-            <div class="w-full relative text-center hover:text-white text-black shadow-lg border rounded-md border-2 border-white hover:border-blue-400 hover:border-2 border-solid overflow-hidden" style="height: 20vw;">
+            <a href="{{route('rooms')}}"><div class="w-full relative text-center hover:text-white text-black shadow-lg border rounded-md border-2 border-white hover:border-blue-400 hover:border-2 border-solid overflow-hidden" style="height: 20vw;">
                 <img class="h-full w-full transform object-cover object-center blur blur-sm hover:blur-none" src="{{ URL('images/rooms/example-1.jpeg') }}">
                 <p class="absolute inset-0 lg:text-7xl md:text-4xl text-3xl lg:ps-5 lg:pt-15 md:ps-2 md:pt-10 ps-2 pt-5 drop-shadow-xl">Hotel Rooms</p>
-            </div>
+            </div></a>
 
-            <div class="w-full relative text-center hover:text-white text-black shadow-lg border rounded-md border-2 border-white hover:border-blue-400 hover:border-2 border-solid overflow-hidden" style="height: 20vw;">
+            <a href="{{route('rooms')}}"><div class="w-full relative text-center hover:text-white text-black shadow-lg border rounded-md border-2 border-white hover:border-blue-400 hover:border-2 border-solid overflow-hidden" style="height: 20vw;">
                 <img class="h-full w-full transform object-cover object-center blur blur-sm hover:blur-none" src="{{ URL('images/rooms/example-1.jpeg') }}">
                 <p class="absolute inset-0 lg:text-7xl md:text-4xl text-3xl lg:ps-5 lg:pt-15 md:ps-2 md:pt-10 ps-2 pt-5 drop-shadow-xl">Hotel Rooms</p>
-            </div>
+            </div></a>
 
         </div>
         <div class="container mx-auto p-3">
